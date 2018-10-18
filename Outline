@@ -1,0 +1,12 @@
+Build three datasets
+
+1. Where the price goes up
+2. Where the price goes down
+3. Stays about even
+
+Let the agent buy and sell accordingly.
+Assumptions:
+    1. If you buy, buy at ask value. Therefore you lower the depth of the ask value
+    2. If the ask value changes by the time you buy then you must ad to orderbook, and will only buy if that
+        values gets bought (else in limit orders after a minute it will be taken back)
+
